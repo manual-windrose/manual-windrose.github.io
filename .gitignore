@@ -1,0 +1,4 @@
+# Pristine pre-i18n source used only to regenerate the stripped index.html.
+index.src.html
+# Resumable translation-token cache (build artifact for translate_nl.py).
+i18n/.nl_cache.json
