@@ -198,6 +198,12 @@ img, svg, video, iframe, table { max-width: 100%; }
 .nav-l3 a { padding-left: 40px !important; font-size: 12.5px !important; }
 .nav-l4 a { padding-left: 52px !important; font-size: 12px !important; }
 
+/* ── Top notice (draft / machine-translation banner) ───────── */
+/* Sits in the content column so the fixed sidebar never overlaps it. */
+.top-notice {
+  margin-left: var(--sidebar-w);
+}
+
 /* ── Main Content ──────────────────────────────────────────── */
 .main-content {
   margin-left: var(--sidebar-w);
@@ -365,6 +371,7 @@ u { text-decoration: none; font-weight: 600; color: var(--text-muted); font-size
   .nav-toggle { display: block; }
   .sidebar { transform: translateX(-100%); }
   .sidebar.open { transform: translateX(0); box-shadow: var(--shadow-md); }
+  .top-notice { margin-left: 0; }
   .main-content { margin-left: 0; padding: 16px 18px 40px; }
   /* Wide data tables scroll inside their own box — never the whole page. */
   table { font-size: 13px; display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
