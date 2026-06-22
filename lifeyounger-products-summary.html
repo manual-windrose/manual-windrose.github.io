@@ -3,169 +3,98 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LiFe-Younger 全产品线工程摘要</title>
+<title>LiFe-Younger 产品速览</title>
 <style>
   :root {
-    --bg: #0f1115;
-    --card: #1a1d24;
-    --accent: #34d399;
-    --accent-dim: #10b981;
-    --text: #e5e7eb;
-    --muted: #9ca3af;
-    --border: #2a2e38;
+    --bg:#0f1115; --card:#1a1d24; --accent:#34d399;
+    --text:#e5e7eb; --muted:#9ca3af; --border:#2a2e38;
   }
-  * { box-sizing: border-box; }
+  * { box-sizing:border-box; }
   body {
-    margin: 0;
-    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.65;
+    margin:0;
+    font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,Roboto,sans-serif;
+    background:var(--bg); color:var(--text); line-height:1.55;
+    -webkit-text-size-adjust:100%;
   }
-  .wrap { max-width: 980px; margin: 0 auto; padding: 40px 24px 80px; }
-  header h1 { font-size: 2rem; margin: 0 0 8px; }
-  header p { color: var(--muted); margin: 0 0 4px; }
-  header a { color: var(--accent); text-decoration: none; }
-  header a:hover { text-decoration: underline; }
+  .wrap { max-width:680px; margin:0 auto; padding:20px 16px 48px; }
+  h1 { font-size:1.4rem; margin:0 0 4px; }
+  .src { color:var(--muted); font-size:.85rem; margin:0 0 20px; }
+  .src a { color:var(--accent); text-decoration:none; }
   h2 {
-    margin: 48px 0 16px;
-    padding-bottom: 8px;
-    border-bottom: 2px solid var(--accent-dim);
-    font-size: 1.4rem;
+    font-size:1.05rem; margin:28px 0 12px;
+    color:var(--accent); border-bottom:1px solid var(--border); padding-bottom:6px;
   }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 16px 0;
-    background: var(--card);
-    border-radius: 10px;
-    overflow: hidden;
-    font-size: 0.95rem;
+  .card {
+    background:var(--card); border:1px solid var(--border);
+    border-left:3px solid var(--accent);
+    border-radius:8px; padding:12px 14px; margin:10px 0;
   }
-  th, td {
-    text-align: left;
-    padding: 12px 14px;
-    border-bottom: 1px solid var(--border);
-    vertical-align: top;
+  .card .name { font-weight:600; color:#fff; font-size:1rem; }
+  .card .tag {
+    display:inline-block; font-size:.72rem; color:var(--accent);
+    border:1px solid var(--border); border-radius:10px;
+    padding:1px 8px; margin-left:6px; vertical-align:middle;
   }
-  thead th { background: #232732; color: var(--accent); font-weight: 600; }
-  tbody tr:last-child td { border-bottom: none; }
-  td strong { color: #fff; }
-  .spec { color: var(--accent); font-weight: 600; }
-  ul.points { padding-left: 0; list-style: none; }
-  ul.points li {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-left: 3px solid var(--accent);
-    padding: 12px 16px;
-    margin: 10px 0;
-    border-radius: 6px;
-  }
+  .card .desc { color:var(--muted); font-size:.9rem; margin-top:5px; }
+  .spec { color:var(--accent); font-weight:600; }
   .note {
-    margin-top: 40px;
-    padding: 16px 20px;
-    background: #2a1f15;
-    border: 1px solid #5c4320;
-    border-left: 4px solid #f59e0b;
-    border-radius: 8px;
-    color: #fcd9a8;
+    margin-top:24px; padding:12px 14px; font-size:.85rem;
+    background:#2a1f15; border:1px solid #5c4320; border-left:3px solid #f59e0b;
+    border-radius:8px; color:#fcd9a8;
   }
-  footer { margin-top: 56px; color: var(--muted); font-size: 0.85rem; text-align: center; }
+  footer { margin-top:32px; color:var(--muted); font-size:.78rem; text-align:center; }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <h1>LiFe-Younger 全产品线工程摘要</h1>
-    <p>来源：<a href="https://www.lifeyounger.cn/" target="_blank" rel="noopener">lifeyounger.cn</a></p>
-    <p>面向工程师的产品概览。已知数值已标注，其余为产品定位与技术形态说明。</p>
-  </header>
+  <h1>LiFe-Younger 产品速览</h1>
+  <p class="src">面向工程师 · 来源 <a href="https://www.lifeyounger.cn/" target="_blank" rel="noopener">lifeyounger.cn</a></p>
 
-  <section>
-    <h2>一、充电系统（EV Charging Systems）</h2>
-    <table>
-      <thead>
-        <tr><th>产品</th><th>类型</th><th>关键参数 / 技术形态</th></tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>iTrailer</strong> 移动储能充电站</td>
-          <td>拖挂式储充一体</td>
-          <td>最大功率 <span class="spec">180 kW</span>，电池容量 <span class="spec">217 kWh</span>（首页另标注约 200 kWh）。兼具直流快充与应急电源双功能，可固定部署或随车移动。</td>
-        </tr>
-        <tr>
-          <td><strong>iMChargerX</strong></td>
-          <td>便携式直流快充</td>
-          <td>移动式 DC 快充设备，面向无固定电网场景。</td>
-        </tr>
-        <tr>
-          <td><strong>iMChargerS</strong></td>
-          <td>光伏直流快充</td>
-          <td>太阳能供电的 DC 充电方案，离网 / 补能场景。</td>
-        </tr>
-        <tr>
-          <td><strong>iACharging</strong></td>
-          <td>自动充电机器人</td>
-          <td>自动化对接充电，面向无人值守 / 自动泊车场景。</td>
-        </tr>
-        <tr>
-          <td><strong>iCabinet</strong></td>
-          <td>储充一体柜</td>
-          <td>储能 + 充电桩集成机柜，削峰填谷、扩容电网受限站点。</td>
-        </tr>
-        <tr>
-          <td><strong>iMContainer</strong></td>
-          <td>集装箱式充电站</td>
-          <td>标准集装箱化充电基础设施，大功率 / 多枪集群部署。</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-
-  <section>
-    <h2>二、储能系统（Energy Storage Systems）</h2>
-    <table>
-      <thead>
-        <tr><th>产品</th><th>类型</th><th>关键参数 / 技术形态</th></tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>iMBase</strong> 移动储能系统</td>
-          <td>标准化机柜</td>
-          <td>标准化机柜设计，便于与拖车或车载系统无缝集成；支持<strong>多机并联</strong>扩容。</td>
-        </tr>
-        <tr>
-          <td><strong>C&amp;I ESS</strong></td>
-          <td>工商业储能</td>
-          <td>企业级储能，峰谷套利、需量管理、备电。</td>
-        </tr>
-        <tr>
-          <td><strong>Utility ESS</strong></td>
-          <td>电网级储能</td>
-          <td>大规模电网侧储能，调频 / 调峰 / 新能源消纳。</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-
-  <section>
-    <h2>工程视角要点</h2>
-    <ul class="points">
-      <li><strong>核心技术栈：</strong>电芯化学体系未在首页公开，但产品命名（LiFe-Younger）及行业惯例指向 <strong>LiFePO₄（磷酸铁锂）</strong>，强调安全性与循环寿命。</li>
-      <li><strong>产品架构思路：</strong>以<strong>模块化 / 标准化机柜</strong>为底座（iMBase），向上派生「移动储能（iTrailer）」与「储充一体（iCabinet）」，实现储能与充电的解耦复用。</li>
-      <li><strong>移动化是主线：</strong>iTrailer、iMChargerX、iMBase 等多款采用拖挂 / 便携设计，主打<strong>无需电网扩容、即放即用</strong>的应急与峰值补能场景。</li>
-      <li><strong>能源多元接入：</strong>iMChargerS 支持光伏直流直充，体现源-储-充一体的离网能力。</li>
-      <li><strong>场景覆盖：</strong>从单机便携（iMChargerX）→ 柜式（iCabinet）→ 集装箱（iMContainer）→ 电网级（Utility ESS），形成功率 / 容量梯度完整的产品矩阵。</li>
-    </ul>
-  </section>
-
-  <div class="note">
-    <strong>⚠️ 参数缺口提醒：</strong>首页仅公开 iTrailer 的功率 / 容量，其余产品的电压等级、电池容量、充电枪标准（GB/T、CCS、CHAdeMO）、散热方式（风冷 / 液冷）、IP 防护、工作温度范围等均未披露。如需用于选型或方案设计，建议直接向厂商索取各产品 <strong>datasheet / 规格书</strong>。
+  <h2>充电系统</h2>
+  <div class="card">
+    <span class="name">iTrailer</span><span class="tag">拖挂储充一体</span>
+    <div class="desc">最大功率 <span class="spec">180 kW</span> · 容量 <span class="spec">217 kWh</span>。快充 + 应急电源，可固定或随车移动。</div>
+  </div>
+  <div class="card">
+    <span class="name">iMChargerX</span><span class="tag">便携直流快充</span>
+    <div class="desc">移动 DC 快充，无固定电网场景。</div>
+  </div>
+  <div class="card">
+    <span class="name">iMChargerS</span><span class="tag">光伏直流快充</span>
+    <div class="desc">太阳能供电 DC 充电，离网补能。</div>
+  </div>
+  <div class="card">
+    <span class="name">iACharging</span><span class="tag">自动充电机器人</span>
+    <div class="desc">自动对接充电，无人值守 / 自动泊车。</div>
+  </div>
+  <div class="card">
+    <span class="name">iCabinet</span><span class="tag">储充一体柜</span>
+    <div class="desc">储能 + 充电桩集成柜，削峰填谷、扩容受限站点。</div>
+  </div>
+  <div class="card">
+    <span class="name">iMContainer</span><span class="tag">集装箱充电站</span>
+    <div class="desc">集装箱化基础设施，大功率 / 多枪集群。</div>
   </div>
 
-  <footer>
-    LiFe-Younger 产品工程摘要 · 数据采集日期 2026-06-22
-  </footer>
+  <h2>储能系统</h2>
+  <div class="card">
+    <span class="name">iMBase</span><span class="tag">移动储能</span>
+    <div class="desc">标准化机柜，易与拖车 / 车载集成，支持多机并联扩容。</div>
+  </div>
+  <div class="card">
+    <span class="name">C&amp;I ESS</span><span class="tag">工商业储能</span>
+    <div class="desc">峰谷套利、需量管理、备电。</div>
+  </div>
+  <div class="card">
+    <span class="name">Utility ESS</span><span class="tag">电网级储能</span>
+    <div class="desc">大规模电网侧，调频 / 调峰 / 新能源消纳。</div>
+  </div>
+
+  <div class="note">
+    ⚠️ 首页仅公开 iTrailer 的功率 / 容量；其余产品电压、容量、充电枪标准、散热、IP、温度范围未披露，选型请索取规格书。
+  </div>
+
+  <footer>数据采集 2026-06-22</footer>
 </div>
 </body>
 </html>
